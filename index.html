@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/8f3ce8761f.js" crossorigin="anonymous"></script> 
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Noto+Sans+JP' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+ <div class="container ">
+   <div class="row">
+      <div id="exit">	&#10060;</div> <div id="move"> &#10019;</div>
+   </div>
+      
+
+    
+      <h1 class="Task List"></h1>
+      <form id="task-form">
+          <div class="input-container"> 
+               <input type="text" name="input" id="input-field" placeholder="New Task"  maxlength = "50" >
+               <span class="input-line"></span>
+          </div>
+         <input type="submit" value=" Add Task" class="button" id="button">
+      </form>
+      <div class="box">
+        <div class="card">
+        <h3 id="task-title">Tasks</h3>
+        <div class="input-container"> 
+          <input type="text" name="filter" id="filter" placeholder="Filter">
+          <span class="input-line"></span>
+     </div>
+    </div>
+      <ul class="task-list">
+        <li class="list-item draggable" draggable="true">Some task-1 <a class="delete-item"> <i class=" fas fa-trash-alt hide" aria-hidden="true"> </i></a></li>
+        <li class="list-item draggable" draggable="true">Some task-2 <a class="delete-item"> <i class=" fas fa-trash-alt hide" aria-hidden="true"> </i></a></li>
+        <li class="list-item draggable" draggable="true">Some task-3 <a class="delete-item"> <i class=" fas fa-trash-alt hide" aria-hidden="true"> </i></a></li>
+      </ul>
+      <a href="" class="clear-tasks button"> Clear Tasks</a>
+    </div>
+      </div>
+    <div id="clearTasks-action">
+        <h2> Clear All Tasks?</h2>
+      <div class="button action" id="confirm"> Confirm</div>
+      <div class="button action" id="cancel"> Cancel</div>
+      </div>
+      
+ <div class="box-2"> <button id="button-open"> Open</button></div>
+
+    <script src="app.min.js"></script>
+</body>
+</html>
